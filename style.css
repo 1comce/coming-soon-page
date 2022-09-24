@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
 }
-body, html{
+body{
     height: 100%;
+    background-color: #000;
 }
 #main{
     position: relative;
@@ -50,7 +51,6 @@ body, html{
 #particles-js {
     width: 100%;
     height: 100%;
-    background-color: #000;
     background-image: url("");
     background-size: cover;
     background-position: center;
