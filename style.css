@@ -28,9 +28,6 @@ body, html{
     font-size: 30px;
     font-weight: 600;
 }
-.menu{
-    margin-left: 600px;
-}
 .menu ul{
     display: flex;
 }
@@ -57,7 +54,6 @@ body, html{
     background-image: url("");
     background-size: cover;
     background-position: center;
-
   }
 
 #middle{
