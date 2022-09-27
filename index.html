@@ -5,24 +5,57 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="description" content="ComingSoonPage">
     <meta name="author" content="J">
-    <meta name="google-site-verification" content="l_DVJ3FIV4rKvpSCUBHTa2zBO8gRfOSjMTUgnrWpSz4" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-title" content="ComingSoonPage">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Coming Soon Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="main"><div class="header">
-    <div class="logo"><a href="">ComingSoon</a></div>
-    <div class="menu">
-    <ul>
-    <li><a href="">home</a></li>
-    <li><a href="">info</a></li>
-    <li><a href="">contact</a></li>
-    </ul></div></div>
-    <div id="middle"><h1>COMING SOON</h1><hr><p id="count"></p></div>
-    <div id="particles-js"></div></div>
+    <div id="main">
+        <header>
+            <div class="nav-pc">
+                <a href="">ComingSoon</a>
+                <nav class="nav-bar-pc">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="">home</a></li>
+                            <li><a href="">info</a></li>
+                            <li><a href="">contact</a></li>
+                        </ul>
+                    </div>
+                </nav> 
+            </div>
+            <div class="nav-mobile">
+                <nav class="nav-bar-mobile">
+                    <input type="checkbox" hidden class="nav-input" id="nav-mobile-input">
+                    <div class="toggle">
+                        <label for="nav-mobile-input"> 
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+                    </div>
+                    <label class="overlay" for="nav-mobile-input"></label>
+                    <ul class="menu-mobile">
+                        <div class="close_btn">
+                            <label for="nav-mobile-input">
+                             <i class="fa fa-times" aria-hidden="true"></i>
+                            </label>
+                        </div>
+                        <li><a href="">home</a></li>
+                        <li><a href="">info</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+        <div id="middle">
+            <h1>COMING SOON</h1><hr>
+                <p id="count"></p>
+        </div>
+        <div id="particles-js"></div>
+    </div>
     <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="main.js"></script>
 </body>
