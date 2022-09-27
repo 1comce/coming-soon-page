@@ -87,16 +87,19 @@ p{
     width: 200px;
     max-width: 100%;
     z-index: 2;
+    display: none;
 }
 .nav-bar-mobile{
     position: fixed;
     width: inherit;
+    transform: translateX(-100%);
 }
 .toggle{
     font-size: 2rem;
     text-align: left;
     padding-left: 10px ;
     padding-top: 10px;
+    transform: translateX(100%);
 }
 .close_btn{
     text-align: right;
@@ -121,7 +124,7 @@ p{
     text-align: center;
     list-style: none;
     border: 1px solid #fff;
-    transform: translateX(-100%);
+    /* transform: translateX(-100%); */
     opacity: 0;
     transition: transform linear 0.2s, opacity linear 0.2s;
 }
@@ -142,7 +145,7 @@ p{
     display: block;
 }
 .nav-input:checked ~ .menu-mobile{
-    transform: translateX(0%);
+    transform: translateX(100%);
     opacity: 1;
 }
 @media screen and (max-width: 768px) {
