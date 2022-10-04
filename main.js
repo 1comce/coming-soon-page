@@ -1,3 +1,4 @@
+start();
 particlesJS("particles-js", {
     "particles": {
       "number": {
@@ -123,3 +124,54 @@ particlesJS("particles-js", {
     if (distance<=0)
     clearInterval(countDown)
 },1000);
+
+function start(){
+  var main=document.getElementById("main")
+  var html= `        <header>
+  <div class="nav-pc">
+      <a href="">ComingSoon</a>
+      <nav class="nav-bar-pc">
+          <div class="menu">
+              <ul>
+                  <li><a href="">home</a></li>
+                  <li><a href="">info</a></li>
+                  <li><a href="">contact</a></li>
+              </ul>
+          </div>
+      </nav> 
+  </div>
+  <input type="checkbox" hidden class="nav-input" id="nav-mobile-input">
+  <div class="toggle">
+      <label for="nav-mobile-input"> 
+          <i class="fa-solid fa-bars"></i>
+      </label>
+  </div>
+  <label class="overlay" for="nav-mobile-input"></label>
+  <div class="nav-mobile">
+      <nav class="nav-bar-mobile">
+          <ul class="menu-mobile">
+              <div class="close_btn">
+                  <label for="nav-mobile-input">
+                   <i class="fa fa-times" aria-hidden="true"></i>
+                  </label>
+              </div>
+              <li><a href="">home</a></li>
+              <li><a href="">info</a></li>
+              <li><a href="">contact</a></li>
+          </ul>
+      </nav>
+  </div>
+</header>
+<div id="middle">
+  <h1>COMING SOON</h1><hr>
+      <p id="count"></p>
+</div>
+<div class="footer">
+  <div class="footer-menu">
+      <a href="">testing</a><a href="">content</a><a href="">about</a>
+  </div>   
+  <i class="fa-solid fa-clock"></i> 
+</div>
+<div id="particles-js"></div>`;
+  main.innerHTML=html;
+}
